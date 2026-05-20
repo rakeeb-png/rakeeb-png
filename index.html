@@ -102,29 +102,12 @@
 
   .nav-logo {
     font-family: 'Syne', sans-serif;
-    font-weight: 800; font-size: 1.1rem;
-    color: #ffffff;
-    text-decoration: none;
-    letter-spacing: 1px;
-    display: inline-flex; align-items: center; gap: 0;
-  }
-  .nav-logo .logo-dot { color: var(--accent); font-size: 1.3rem; line-height: 1; margin: 0 1px; }
-  .nav-logo .logo-ds {
+    font-weight: 800; font-size: 1.2rem;
     color: var(--accent);
-    font-size: 0.72rem;
-    letter-spacing: 0.15em;
-    font-weight: 700;
-    background: rgba(0,229,255,0.1);
-    border: 1px solid rgba(0,229,255,0.3);
-    padding: 0.15rem 0.4rem;
-    border-radius: 2px;
-    margin-left: 2px;
-    transition: background 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    letter-spacing: -0.5px;
   }
-  .nav-logo:hover .logo-ds {
-    background: rgba(0,229,255,0.2);
-    box-shadow: 0 0 10px rgba(0,229,255,0.3);
-  }
+  .nav-logo span { color: var(--accent2); }
 
   .nav-links {
     display: flex; gap: 2.5rem; list-style: none;
@@ -144,33 +127,6 @@
 
   .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
   .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--accent); transition: 0.3s; }
-
-  /* ── Advanced name styling ── */
-  .name-line {
-    display: block;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-    animation: nameShimmer 4s linear infinite;
-    filter: drop-shadow(0 0 18px rgba(255,255,255,0.25));
-  }
-  .name-line-1 {
-    background-image: linear-gradient(90deg, #ffffff 0%, #cce8ff 40%, #00e5ff 65%, #ffffff 100%);
-    animation-delay: 0s;
-  }
-  .name-line-2 {
-    background-image: linear-gradient(90deg, #a8d8ff 0%, #ffffff 35%, #7ecfff 60%, #c8f0ff 100%);
-    animation-delay: 0.6s;
-  }
-  .name-line-3 {
-    background-image: linear-gradient(90deg, #00e5ff 0%, #80f0ff 30%, #ffffff 55%, #00cfee 100%);
-    animation-delay: 1.2s;
-  }
-  @keyframes nameShimmer {
-    0% { background-position: 0% center; }
-    100% { background-position: 200% center; }
-  }
 
   /* ── HERO ── */
   #hero {
@@ -495,7 +451,7 @@
 
 <!-- NAV -->
 <nav id="navbar">
-  <a href="#hero" class="nav-logo">RAKEEB<span class="logo-dot">.</span><span class="logo-ds">DS</span></a>
+  <a href="#hero" class="nav-logo">RJB<span>.</span></a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -518,9 +474,7 @@
           Available for opportunities
         </div>
         <h1 class="hero-name glitch" data-text="Rakeeb Javeed Bhat">
-          <span class="name-line name-line-1">Rakeeb</span>
-          <span class="name-line name-line-2">Javeed</span>
-          <span class="name-line name-line-3">Bhat</span>
+          Rakeeb Javeed Bhat
           <span class="line2">Data Scientist</span>
         </h1>
         <p class="hero-role">
